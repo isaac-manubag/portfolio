@@ -471,10 +471,9 @@ figure {
 					font-weight: 400;
 					&.btn-learn{
 						color: $brand-black;
-						border: 1px solid $brand-black;
-						background: transparent !important;
+						border: 1px solid white;
+						background: white !important;
 						&:hover{
-							background: transparent !important;
 							border: 1px solid $brand-black !important;
 						}
 					}
