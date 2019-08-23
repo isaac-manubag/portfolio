@@ -1,8 +1,4 @@
-# Backend for URL Shortener built with Hapi
+# Just a portfolio 
 ## What I learned
-- Hapi
-- Hapi Auth
-- Hapi Routing
-- MongoDB
-- Mongoose
+- HapiJS
 
