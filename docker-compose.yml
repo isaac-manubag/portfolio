@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  portfolio:
+    container_name: portfolio
+    build:
+      context: '.'
+    environment:
+      - VIRTUAL_HOST=${V_HOST}
+      - VIRTUAL_PORT=${V_PORT}
+      - LETSENCRYPT_HOST=isaacmanubag.com
+      - LETSENCRYPT_EMAIL=isaac_manubag@yahoo.com
+    expose:
+      - 3001
+    volumes:
+      - .:/usr/src/app
+    networks:
+      default:
+ 
+networks:
+  default:
+    external:
+      name: nginx-proxy
